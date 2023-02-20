@@ -16,12 +16,8 @@ weight: 17
         - bar
       include: # this includes the repo "foobar"
         - foobar
-      excludeorgs: # this excludes repos from the organizations "foo" and "bar"
-        - foo
-        - bar
-      includeorgs: # this includes repos from the organizations "foo1" and "bar1"
-        - foo1
-        - bar1
+      filter:
+        lastactivity: 1y
 ```
 - `url`: if empty, https://bitbucket.org is used.
 - `user`: the user you want to clone the repositories from.
@@ -40,5 +36,5 @@ for the clone process, either use:
 - `sshkey`: if empty, it uses your home directories' .ssh/id_rsa.
 - `exclude`: you can exclude repositories.
 - `include`: only clone those specific repositories.
-- `excludeorgs`: leave out specific organizations of the user.
-- `includeorgs`: only clone those specific organizations repositories.
+- `filter`:
+  - `lastactivity`: only repos that were active in this time frame are cloned (y, M, d, h, m, s)

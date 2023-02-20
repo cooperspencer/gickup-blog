@@ -25,6 +25,8 @@ weight: 19
         - foo1
         - bar1
       wiki: true
+      filter:
+        lastactivity: 1y
 ```
 - `token`: your onedev token. You don't need one, if you backup only public repositories.
 - `token_file`: alternatively, specify the token in a file, relative to current working directory when executed.
@@ -48,3 +50,5 @@ for the clone process, either use:
 - `excludeorgs`: leave out specific organizations of the user.
 - `includeorgs`: only clone those specific organizations repositories.
 - `wiki`: also clone the wikis of the repositories.
+- `filter`:
+  - `lastactivity`: only repos that were active in this time frame are cloned (y, M, d, h, m, s)

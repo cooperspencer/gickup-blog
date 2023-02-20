@@ -24,6 +24,8 @@ weight: 18
       includeorgs: # this includes repos from the organizations "foo1" and "bar1"
         - foo1
         - bar1
+      filter:
+        lastactivity: 1y
 ```
 - `token`: your onedev token. You don't need one, if you backup only public repositories.
 - `token_file`: alternatively, specify the token in a file, relative to current working directory when executed.
@@ -46,3 +48,5 @@ for the clone process, either use:
 - `include`: only clone those specific repositories.
 - `excludeorgs`: leave out specific organizations of the user.
 - `includeorgs`: only clone those specific organizations repositories.
+- `filter`:
+  - `lastactivity`: only repos that were active in this time frame are cloned (y, M, d, h, m, s)

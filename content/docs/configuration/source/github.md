@@ -25,6 +25,13 @@ weight: 13
         - bar1
       wiki: true
       starred: true
+      filter:
+        lastactivity: 1y
+        stars: 100
+        excludearchived: true
+        languages:
+          - go
+          - whatever
 ```
 
 - `token`: your github token. You don't need one, if you backup only public repositories, although it is possible to hit the limit for the Github-API.
@@ -50,3 +57,8 @@ for the clone process, either use:
 - `includeorgs`: only clone those specific organizations repositories.
 - `wiki`: also clone the wikis of the repositories.
 - `starred`: also clone the starred repositories of the `user`.
+- `filter`:
+  - `lastactivity`: only repos that were active in this time frame are cloned (y, M, d, h, m, s)
+  - `stars`: clone repos with at least x stars.
+  - `excludearchived`: do not clone archived repos.
+  - `languages`: only clone repos of said languages.
