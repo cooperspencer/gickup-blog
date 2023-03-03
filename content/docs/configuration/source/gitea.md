@@ -35,7 +35,7 @@ weight: 14
           - whatever
 ```
 
-- `token`: your gitea token. You don't need one, if you backup only public repositories.
+- `token`: your gitea token. You don't need one, if you backup only public repositories. It can also be an environment variable.
 - `token_file`: alternatively, specify the token in a file, relative to current working directory when executed.
 - `url`: if empty, https://gitea.com is used.
 - `user`: the user you want to clone the repositories from.

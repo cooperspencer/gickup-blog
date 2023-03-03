@@ -34,7 +34,7 @@ weight: 13
           - whatever
 ```
 
-- `token`: your github token. You don't need one, if you backup only public repositories, although it is possible to hit the limit for the Github-API.
+- `token`: your github token. You don't need one, if you backup only public repositories, although it is possible to hit the limit for the Github-API. It can also be an environment variable.
 - `token_file`: alternatively, specify the token in a file, relative to current working directory when executed.
 - `user`: the user you want to clone the repositories from.
 {{< tip >}}

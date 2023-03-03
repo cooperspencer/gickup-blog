@@ -30,7 +30,7 @@ weight: 15
         stars: 100
 ```
 
-- `token`: your gogs token. You don't need one, if you backup only public repositories.
+- `token`: your gogs token. You don't need one, if you backup only public repositories. It can also be an environment variable.
 - `token_file`: alternatively, specify the token in a file, relative to current working directory when executed.
 - `url`: there is no default value.
 - `user`: the user you want to clone the repositories from.
