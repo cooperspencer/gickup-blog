@@ -26,6 +26,7 @@ weight: 18
         - bar1
       filter:
         lastactivity: 1y
+        excludeforks: true
 ```
 - `token`: your onedev token. You don't need one, if you backup only public repositories. It can also be an environment variable.
 - `token_file`: alternatively, specify the token in a file, relative to current working directory when executed.
@@ -50,3 +51,4 @@ for the clone process, either use:
 - `includeorgs`: only clone those specific organizations repositories.
 - `filter`:
   - `lastactivity`: only repos that were active in this time frame are cloned (y, M, d, h, m, s)
+  - `excludeforks`: do not clone forked repos

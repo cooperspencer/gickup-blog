@@ -28,6 +28,7 @@ weight: 15
       filter:
         lastactivity: 1y
         stars: 100
+        excludeforks: true
 ```
 
 - `token`: your gogs token. You don't need one, if you backup only public repositories. It can also be an environment variable.
@@ -56,3 +57,4 @@ for the clone process, either use:
 - `filter`:
   - `lastactivity`: only repos that were active in this time frame are cloned (y, M, d, h, m, s)
   - `stars`: clone repos with at least x stars.
+  - `excludeforks`: do not clone forked repos

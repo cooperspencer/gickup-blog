@@ -30,6 +30,7 @@ weight: 14
         lastactivity: 1y
         stars: 100
         excludearchived: true
+        excludeforks: true
         languages:
           - go
           - whatever
@@ -63,4 +64,5 @@ for the clone process, either use:
   - `lastactivity`: only repos that were active in this time frame are cloned (y, M, d, h, m, s)
   - `stars`: clone repos with at least x stars
   - `excludearchived`: do not clone archived repos
+  - `excludeforks`: do not clone forked repos
   - `languages`: only clone repos of said languages
