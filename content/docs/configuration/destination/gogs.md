@@ -7,13 +7,13 @@ weight: 32
   gogs:
     - token: some-token
       token_file: token.txt
-      user: some-nome
+      user: some-name
       url: http(s)://url-to-gogs
       createorg: true
       visibility:
         repositories: private
 ```
-- `token`: your gogs token. You don't need one, if you backup only public repositories.
+- `token`: your gogs token.
 - `token_file`: alternatively, specify the token in a file, relative to current working directory when executed.
 - `url`: there is no default value.
 - `user`: the user/org you want to mirror the repositories to. 

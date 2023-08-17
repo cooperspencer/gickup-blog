@@ -7,14 +7,14 @@ weight: 31
   gitea:
     - token: some-token
       token_file: token.txt
-      user: some-nome
+      user: some-name
       url: http(s)://url-to-gitea
       createorg: true
       visibility:
         repositories: private
         organizations: private
 ```
-- `token`: your gitea token. You don't need one, if you backup only public repositories.
+- `token`: your gitea token.
 - `token_file`: alternatively, specify the token in a file, relative to current working directory when executed.
 - `url`: if empty, https://gitea.com is used.
 - `user`: the user/org you want to mirror the repositories to. 
