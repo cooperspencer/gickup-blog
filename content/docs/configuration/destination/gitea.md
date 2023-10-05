@@ -10,6 +10,8 @@ weight: 31
       user: some-name
       url: http(s)://url-to-gitea
       createorg: true
+      lfs: true
+      mirrorinterval: 1h
       visibility:
         repositories: private
         organizations: private
@@ -19,6 +21,8 @@ weight: 31
 - `url`: if empty, https://gitea.com is used.
 - `user`: the user/org you want to mirror the repositories to. 
 - `createorg`: if activated, it will create the value in user as organization if it doesn't exist on the system.
+- `lfs`: enable lfs on the mirror repository.
+- `mirrorinterval`: resync interval for gitea.
 {{< tip >}}
 if `user` is empty and `createorg` is set to `true`, it creates organizations based on the original author.
 {{< /tip >}}
