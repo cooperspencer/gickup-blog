@@ -25,6 +25,7 @@ weight: 15
         - foo1
         - bar1
       wiki: true
+      issues: true
       filter:
         lastactivity: 1y
         stars: 100
@@ -54,6 +55,7 @@ for the clone process, either use:
 - `excludeorgs`: leave out specific organizations of the user.
 - `includeorgs`: only clone those specific organizations repositories.
 - `wiki`: also clone the wikis of the repositories.
+- `issues`: creates a backup of the issues of the repositorie. works only with a local destination.
 - `filter`:
   - `lastactivity`: only repos that were active in this time frame are cloned (y, M, d, h, m, s)
   - `stars`: clone repos with at least x stars.

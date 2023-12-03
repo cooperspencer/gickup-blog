@@ -24,6 +24,7 @@ weight: 18
       includeorgs: # this includes repos from the organizations "foo1" and "bar1"
         - foo1
         - bar1
+      issues: true
       filter:
         lastactivity: 1y
         excludeforks: true
@@ -49,6 +50,7 @@ for the clone process, either use:
 - `include`: only clone those specific repositories.
 - `excludeorgs`: leave out specific organizations of the user.
 - `includeorgs`: only clone those specific organizations repositories.
+- `issues`: creates a backup of the issues of the repositorie. works only with a local destination.
 - `filter`:
   - `lastactivity`: only repos that were active in this time frame are cloned (y, M, d, h, m, s)
   - `excludeforks`: do not clone forked repos
