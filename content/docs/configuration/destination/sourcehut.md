@@ -13,7 +13,7 @@ weight: 34
       visibility:
         repositories: private
 ```
-- `token`: your github token.
+- `token`: your sourcehut token.
 - `token_file`: alternatively, specify the token in a file, relative to current working directory when executed.
 - `url`: if empty, https://git.sr.ht is used.
 {{< tip >}}

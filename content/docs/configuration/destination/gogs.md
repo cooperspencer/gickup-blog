@@ -10,6 +10,8 @@ weight: 32
       user: some-name
       url: http(s)://url-to-gogs
       createorg: true
+      mirror:
+        enabled: false
       visibility:
         repositories: private
 ```
@@ -21,5 +23,7 @@ weight: 32
 {{< tip >}}
 if `user` is empty and `createorg` is set to `true`, it creates organizations based on the original author.
 {{< /tip >}}
+- `mirror`: handle the mirror functionality
+  - `enabled`: if set to `false` gogs will handle the mirror process itself, if set to `true` gickup will clone the repo locally and push it to gogs.
 - `visibility`: set the visibility of created repositories
     - `repositories`: can be `private` or `public`, default is `private`
